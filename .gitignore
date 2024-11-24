@@ -161,4 +161,21 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+# Files and directories related to work history
 .history
+
+# Files related to Exercism
+.exercism
+HELP.md
+HINTS.md
+.exercism/README.md
+README.md
+
+# Files related to markdownlint
+.markdownlint.yaml
+
+# Files related to markdownlintignore
+.markdownlintignore
+
+# Files related to pytest
+*_test.py

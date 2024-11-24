@@ -39,6 +39,11 @@ select = [
 ]
 ignore = ['W291', 'W292', 'W293']
 
+[tool.pytest.ini_options]
+markers = [
+    "task: marker for specific task tests"
+]
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
