@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "coding-playground"
+version = "0.0.1"
+description = "This repository is designed to explore, learn, and practice programming skills through engaging coding exercises and challenges."
+authors = ["landerox"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.8.0"
+sqlfluff = "^3.2.5"
+pytest = "^8.3.3"
+pre-commit = "^4.0.1"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+# https://beta.ruff.rs/docs/configuration/
+select = [
+  "E",   # Style errors (Pycodestyle)
+  "F",   # Flake8 errors
+  "W",   # Warnings (Pycodestyle)
+  "C",   # Conventions (Pycodestyle)
+  "N",   # Naming conventions (PEP8Naming)
+  "D",   # Docstrings (pydocstyle)
+  "S",   # Security issues (Bandit)
+  "I",   # Import conventions (isort)
+  "B",   # BugBear errors (Flake8-Bugbear)
+  "ANN", # Type annotations (Flake8-Annotations)
+  "SIM", # Simplifications (Flake8-Simplify)
+  "ARG", # Argument-related issues (Flake8-Argument-checker)
+  "C4",  # Custom category 4 (specific to your setup)
+]
+ignore = ['W291', 'W292', 'W293']
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
