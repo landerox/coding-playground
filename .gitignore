@@ -179,6 +179,7 @@ README.md
 
 # Files related to pytest
 *_test.py
+*_test_*
 
 # Files related to ruff
 .ruff_cache
